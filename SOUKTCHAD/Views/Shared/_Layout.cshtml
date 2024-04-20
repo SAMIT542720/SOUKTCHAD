@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿@* <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -29,13 +29,13 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
+    </header> *@
+<div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
+@* 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - SOUKTCHAD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -47,3 +47,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+ *@
