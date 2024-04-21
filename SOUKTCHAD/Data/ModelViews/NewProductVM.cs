@@ -1,10 +1,10 @@
-﻿using SOUKTCHAD.Data.Base;
-using System.ComponentModel.DataAnnotations;
+﻿using SOUKTCHAD.Models;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace SOUKTCHAD.Models
+namespace SOUKTCHAD.Data.ModelViews
 {
-    public class PRODUCT : IEntityBase
+    public class NewProductVM
     {
         [Key]
         public int ID { get; set; }
@@ -34,7 +34,5 @@ namespace SOUKTCHAD.Models
         [ForeignKey("CATIGORYID")]
         public int? CATIGORYID { get; set; }
         public CATIGORY? CATIGORY { get; set; }
-
-
     }
 }
